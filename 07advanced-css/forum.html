@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+        <head>
+            <title>Character Design Basics: Home</title>
+
+            <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+            <link rel="stylesheet" href="design.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+            <meta charset="UTF-8">
+            <meta name="description" content="Character Design for beginners">
+            <meta name="author" content="Samantha Alva">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        </head>
+        <body>
+            <!--Start of page header-->
+            <header>
+                <img src="images/logo.png" alt="site logo" width="100" 
+                height="100">
+                <div>
+                    <h1>Character Design</h1>
+                    <p>Be Creative</p>
+                </div>
+            </header>
+            <!--start of page navigation-->
+            <nav>
+               <ul>
+                <li><a href="index.html">The Beauty of Character Design: An Overview</a></li>
+                <li><a href="tools.html">Character Design Principles</a></li>
+                <li><a href="examples.html">Examples</a></li>
+                <li class="hover"><a href="forum.html">Commission Me</a></li>
+               </ul>
+            </nav>
+            <!--start of page main-->
+            <main>
+
+                <figure class="galaxy">
+                <img src="images/hero.png" alt="One of my artworks"
+                width="1024" height="1365">
+                </figure>
+
+                
+                <h1>Request a Commission</h1>
+
+                 <form method="get" class="order" action="thanks.html">
+
+                    <fieldset>
+                    <legend>Customer Information </legend>
+                    <label>First Name*<input type="text" name="fname" required></label>
+                    <label>Last Name*<input type="text" name="lname" required></label>
+                    <label>Mobile Number*<input type="tel" name="phone" required></label>
+                    <label>Email*<input type="email" name="email" required></label>
+                    </fieldset>
+
+                    <fieldset>
+                    <legend>Commission Preferences</legend>
+                        <label><input type="radio" name="type" value="simple sketch">Sketch Commission ($10)</label>
+                        <label><input type="radio" name="type" value="lineart">Lineart Commission ($20)</label>
+                        <label><input type="radio" name="type" value="flat colors">Flat Colors Commission ($30)</label>
+                        <label><input type="radio" name="type" value="cell shading">Colors & Cell Shading Commission ($50)</label>
+                        <label><input type="radio" name="type" value="blended shading">Colors & Blended Shading Commission ($60)</label>
+                    </fieldset>
+
+                    <fieldset>
+                    <legend>Additional Requests</legend>
+                        <label><input type="checkbox" name="background" value="yes"> Background ($10-$40 depending on complexity)</label>
+                        <label><input type="checkbox" name="noise" value="yes"> FX: Noise ($1)</label>
+                        <label><input type="checkbox" name="blur" value="yes"> FX: Blur ($1)</label>
+                        <label><input type="checkbox" name="red" value="yes"> FX: Color Correction ($2)</label>
+                        <label>Specify Tint Colors Here:<input type="text" name="text"></label>
+                        <label>Additional Characters ($25 per extra character)<input type= "text" name="text"></label>
+                    </fieldset>
+
+                    <label> Specifics: Character Description, Background Description, FX preferences, ect. 
+                       <br> (Prices can be discussed over email & text)
+                        <textarea name="Comments"></textarea>
+                    </label>
+
+
+                    <label>Availability</label>
+                    <select name="Availability">
+                            <option value="none">Please Select</option>
+                            <option value="morning">7am-11am</option>
+                            <option value="noon">11am-2pm</option>
+                            <option value="afternoon">2pm-5pm</option>
+                            <option value="evening">5pm-8pm</option>
+                            <option value="night">8pm-11pm</option>
+                            <option value="custom">Custom: Specify in comments</option>
+                    
+
+
+
+                    </select>
+
+                    <fieldset>
+                    <legend>Client/Commissioner Agreements</legend>
+                        <label><input type="checkbox" name="leave" value="yes"> I reserve the right to decline requests I am uncomfortable with.</label>
+                        <label><input type="checkbox" name="rude" value="yes"> I will not serve rude/overly demanding customers. Please be understanding.</label>
+                        <label><input type="checkbox" name="upfront" value="yes"> Half of the payment will be delivered upfront.</label>
+                        <label><input type="checkbox" name="confirm" value="yes"> Once a sketch is approved by you, the second half of the payment will be delivered.</label>
+                        <label><input type="checkbox" name="watermark" value="yes"> A watermark will stay on the artwork until full payment is recieved.</label>
+                        <label><input type="checkbox" name="refund" value="yes"> If I can't finish your commission, you will recieve a full refund.</label>
+                        <label><input type="checkbox" name="contact" value="yes"> I reserve the right to cut contact (after a full refund) should I feel the need to.</label>
+                        <label><input type="checkbox" name="examples" value="yes"> You have the right to ask for additional artwork examples (before submitting a form) via text/email.</label>
+                    
+                    </fieldset>
+
+                    <fieldset>
+                    <legend>Payment Method</legend>
+                    <label><input type="radio" name="pay" value="Venmo" required>Venmo</label>
+                    <label><input type="radio" name="pay" value="Paypal" required>Paypal</label>
+                    <label><input type="radio" name="pay" value="Cashapp" required>Cashapp</label>
+                    <label>Account Username*<input type="text" name="text" required></label>
+                    </fieldset>
+
+                   
+
+
+
+
+
+
+
+
+
+
+
+                    <input type="submit" value="Confirm your Commission">
+                </form>
+
+                <!--Repurpose image tag for artwork example-->
+           
+
+            </main>
+            <!--start of page footer-->
+            <footer>
+        
+                <p>&copy; 2024 &bull; &copy; Samantha Alva &bull; <a href="mailto:galaxyartist2000@gmail.com">Email Us</a></p>
+            </footer>
+        </body>
+        
+</html>
