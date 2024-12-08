@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Reasons why Escalante is the perfect vacation destination for you.">
+        <meta name="author" content="Samantha Alva">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Escalante: Your Dream Vacation</title>
+        <link rel="stylesheet" href="vacation.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Fontdiner+Swanky&family=Syne+Mono&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+       
+
+    </head>
+    <body>
+        <!--Header starts here-->
+        <header>
+            <img src="images/logo.png" alt="site logo" width="144" height="144">
+            <div>
+                <h1>Escalante</h1>
+                <p>Your Dream Vacation</p>
+            </div>
+        </header>
+        <!--Nav starts here-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Escalante: Your Dream Vacation</a></li>
+                <li><a href="gallery.html">Destinations</a></li>
+                <li><a href="video.html">The Escalante Experience: A video</a></li>
+                <li><a href="packages.html">Vacation Packages</a></li>
+                <li class="hover"><a href="form.html">Request a Package</a></li>
+            </ul>
+
+        </nav>
+        <!--Main starts here-->
+        <main>
+            <h1>Request a Package</h1>
+            <form method="get" class="form" action="thanks.html">
+
+                <fieldset>
+                <legend>Customer Information</legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Phone Number*<input type="tel" name="phone" required placeholder="123-456-7890"></label>
+                </fieldset>
+
+                <fieldset>
+                <legend>Package Selection</legend>
+                <label><input type="radio" name="method" value="Outfitters">Package #1: Escalante Outfitters ($150/day)</label>
+                <label><input type="radio" name="method" value="Yurts">Package #2: Escalante Yurts ($100/day)</label>
+                <label><input type="radio" name="method" value="Lodge">Package #3: Canyon Country Lodge ($200/day)</label>
+                </fieldset>
+
+                    <label>Preferred Arrival Time
+                    <select name="time">
+                        <option value="none">Please Select</option>
+                        <option value="early morning">4am-7am</option>
+                        <option value="morning">8am-11am</option>
+                        <option value="afternoon">12am-3pm</option>
+                        <option value="late afternoon">4pm-6pm</option>
+                        <option value="Evening">7pm-8pm</option>
+                        <option value="night">9pm-12am</option>
+                    </select>
+                    </label>
+
+                <label>Special Instructions and Specifics
+                    <textarea name="comments">Specific arrival time, accommodations, and things to note</textarea>
+                </label>
+
+                <fieldset>
+                <legend>User Agreements</legend>
+                <label><input type="checkbox" name="time" value="yes"> My arrival will happen at the selected time and lodging.</label>
+                <label><input type="checkbox" name="pay" value="yes"> I agree to pay the full amount for our package.</label>
+                <label><input type="checkbox" name="respect" value="yes"> I will respect my hosts, lodging, and transport.</label>
+                <label><input type="checkbox" name="damage" value="yes"> I will pay for any damages.</label>
+                <label><input type="checkbox" name="leave" value="yes"> I will leave at the agreed time, after completing any cleaning required.</label>
+                <label><input type="checkbox" name="fun" value="yes"> Most importantly, I'll have fun!</label>
+                </fieldset>
+    
+                <input type="submit" value="Purchase Package">
+            </form>
+            </main>
+        <!--Footer starts here-->
+        <footer>
+            <p>&copy; 2024 &bull; Samantha Alva &bull; <a href="mailto:galaxyartist@gmail.com">Email Us</a></p>
+
+        </footer>
+
+    </body>
+
+</html>

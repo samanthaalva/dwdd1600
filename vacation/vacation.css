@@ -1,0 +1,232 @@
+/*Prevent issues with browsers*/
+* {box-sizing: border-box;}
+
+
+body {
+        font-family: 'Cabin Sketch', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0;
+}
+
+/* Header Stuff Here */
+header {
+    background-color: #6a340a;
+    padding: 2rem 3vw;
+    display: flex;
+    align-items: center;
+}
+header div {
+    padding-left: 3vw;
+}
+header h1  {
+    margin: 0;
+    color: white;
+    letter-spacing: 9px;
+}
+header p {
+    margin: 0;
+    color: white;
+    letter-spacing: 3px;
+}
+
+/*SMALL SCREENS*/
+@media only screen and (max-width: 800px) {
+   nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        border-bottom: solid 1px #dcf5ea;
+        color: #293F34;
+        background-color: #8CC4AB;
+        border-radius: 2px;
+    }
+    nav a:hover {
+        background-color: #293F34;
+        color: white;
+    }
+    nav .hover a  {
+        background-color: #293F34;
+        color: white;
+    }
+}/*end of media query for SMALL SCREENS*/
+
+/*BIG SCREENS*/
+@media only screen and (min-width: 801px) {
+    nav {
+        background-color: #8CC4AB;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0 3vw;
+        margin: 0;
+        display: flex;
+    }
+    
+    nav a {
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: #293F34;
+        display: block;
+        padding: .85rem 2rem;
+    }
+    nav li.hover a {
+        background-color:#293F34;
+        color: white;
+    }
+    nav a:hover {
+        color: white;
+    }
+}/*end of media query for BIG SCREENS*/
+
+
+
+
+
+/*Stuff for the main*/
+main {
+    padding: 1rem 3vw;
+    background-color: #dcf5ea;
+}
+main h1 {
+    color:#361a05;
+}
+
+main p {
+    color: #361a05;
+    margin-bottom: 1px;
+}
+
+figure.wrapped {
+    width: 50%;
+    margin: 0 0 0 2rem;
+    float: right;
+}
+
+figure.wrapped img {
+    width: auto;
+    height: auto;
+    max-height: 40vh;
+    max-width: 100%;
+    
+}
+
+figure.wrapped figcaption {
+    text-align:center;
+    font-size: .80rem;
+    font-style: italic;
+    color:#476a58
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color:#476a58;
+    font-style: italic;
+}
+
+div.package figcaption {
+    text-align: left;
+    font-size: .8rem;
+    color: #476a58;
+    font-style: italic;
+}
+
+main h2 {
+    color: #476a58;
+}
+
+main a {
+    color:#476a58;
+}
+main a:hover {
+    color:#fc9d54;
+}
+hr {
+    border: .5px solid#293F34;
+}
+
+.form fieldset {
+    border: 1px solid #4f8067;
+    border-radius: 2px;
+    margin-bottom: 2rem;
+}
+.form legend {
+    color: #361a05;
+    font-size: .8rem;
+}
+.form label {
+    margin: .5rem;
+}
+.form label, .form select, .form [type=text], .form [type=tel], .form textarea {
+    display: block;
+    color: #293F34;
+}
+.form select, .form textarea {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.form [type=text], .form [type=tel], .form select, .form textarea {
+    border: solid 1px #293F34;
+    padding: .3rem;
+    width: 300px;
+    border-radius: 2px;
+    font-family: 'Cabin Sketch', 'sans-serif';
+    font-weight: 400;
+    color: #361a05;
+    background-color: #f2fff9;
+}
+.form textarea {
+    height: 9rem;
+    width: 30rem;
+}
+.form :required {
+    background-color: #f2fff9;
+}
+.form [type=submit] {
+    background-color: #476a58;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    color:#f2fff9;
+    font-family: 'Cabin Sketch', 'sans-serif';
+    font-weight: 400;
+    margin-bottom: 1rem;
+    margin-left: .5vw;
+}
+
+/*footer stuff here*/
+footer {
+    padding: 1rem 3vw;
+    background-color: #713507;
+    color: white;
+}
+
+footer a {
+    color:#c3ffe4;
+}
+
+footer a:hover {
+    color: #fc9d54;
+}
+
+header, nav, main, footer {
+    max-width: 80rem;
+    margin: 0 auto;
+}
